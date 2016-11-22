@@ -4,43 +4,42 @@ body {
     /*background: -o-linear-gradient(-45deg, red, white); /* For Opera 11.1 to 12.0 */
     /*background: -moz-linear-gradient(-45deg, red, white); /* For Firefox 3.6 to 15 */
     /*background: linear-gradient(-45deg, white, #ffe7df); /* Standard syntax */
+    
+    font-size: 24px;
 }
 
 @media screen and (max-width: 920px) {
-    #sectionsLarge {
+    .menu {
         display: none;
-        width: 100%;
+    }
+    #innerWrapper {
+        display: none;
     }
 }
 
 @media screen and (min-width: 920px) {
-    #sectionsSmall {
+    #mobileOverlay {
         display: none;
     }
 }
 
 .menu {
-    border-bottom: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: white;
-    
     position: fixed;
     width: 100%;
     height: 46px;
     top: 0px;
     z-index: 1;
     background-color: #222;
-  
 }
 
 .menu li {
     display: inline-block;
     
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 6px;
+    margin-right: 6px;
     
     padding-top: 5px;
-    font-size: 28px;
+    font-size: 125%;
     font-family: 'Catamaran', sans-serif;
     text-align: center;
     vertical-align: middle;
@@ -75,89 +74,141 @@ body {
 #social {
     display: inline-block;
     position: fixed;
-    right: 2%;
+    right: 1%;
     top: 0.2%;
 }
 
 .social#emailLink {
-    background-image: url(In.png);
-    height: 28px;
-    width: 28px;
-    
-    position: fixed;
-    right: 4%;
-    
-    transition: all ease 0.3s;
-    transition: ease-out 0.3s;
-}
-
-.social#instagramLink {
-    background-image: url(GitHub.png);
+    background-image: url(Gmail_BW.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 32px;
     width: 32px;
     
     position: fixed;
-    right: 8%;
     
     transition: all ease 0.3s;
     transition: ease-out 0.3s;
 }
 
 .social#facebookLink {
-    background-image: url(GitHub.png);
+    background-image: url(Facebook_BW.png);
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 32px;
     width: 32px;
     
     position: fixed;
-    right: 12%;
     
     transition: all ease 0.3s;
     transition: ease-out 0.3s;
 }
 
 .social#youtubeLink {
-    background-image: url(GitHub.png);
+    background-image: url(YouTube_BW.png);
+    background-size: 32px 22.5px;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 32px;
     width: 32px;
     
     position: fixed;
-    right: 16%;
     
     transition: all ease 0.3s;
     transition: ease-out 0.3s;
 }
 
 .social#emailLink:hover {
-    background-image: url('GithubColored.png');
+    background-image: url(Gmail_Color.png);
 }
 
 .social#emailLink:active {
-    background-image: url('GithubColored.png');
-}
-
-.social#instagramLink:hover {
-    background-image: url(InColored.png);
-}
-
-.social#instagramLink:active {
-    background-image: url(InColored.png);
+    background-image: url(Gmail_Color.png);
 }
 
 .social#facebookLink:hover {
-    background-image: url(InColored.png);
+    background-image: url(Facebook_Color.png);
 }
 
 .social#facebookLink:active {
-    background-image: url(InColored.png);
+    background-image: url(Facebook_Color.png);
 }
 
 .social#youtubeLink:hover {
-    background-image: url(InColored.png);
+    background-image: url(YouTube_Color.png);
 }
 
 .social#youtubeLink:active {
-    background-image: url(InColored.png);
+    background-image: url(YouTube_Color.png);
 }
+
+#mobileOverlay {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 101%;
+    
+    display: table;
+    
+    overflow: auto;
+    
+    background-color: #222;
+}
+
+#mobileWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    display: table;
+    box-sizing: border-box;
+    text-align: center;
+    
+    overflow: auto;
+}
+
+ #mobileNav {
+    font-size: 250%;
+    line-height: 250%;
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+    
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.mobileButton {
+    display: block;
+    overflow: scroll;
+}
+
+.mobileButton a:link {
+    text-decoration: none;
+    text-decoration-line: none;
+    transform-style:preserve-3d; 
+    color: white;
+}
+
+.mobileButton a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: white;
+}
+
+.mobileButton a:hover {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: white;
+}
+
+.mobileButton a:active {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: #e4af24;
+}
+
 
 #header {
     height:  62px;
@@ -171,6 +222,8 @@ body {
 #innerWrapper {
     margin-left: 5%;
     margin-right: 5%;
+    
+    line-height: 1.2;
 }
 
 .sectionHeader {
@@ -179,7 +232,7 @@ body {
     
     padding-top: 50px;
     
-    font-size: 92px;
+    font-size: 500%;
     font-family: 'Catamaran', sans-serif;
     text-align: center;
     
@@ -208,7 +261,7 @@ body {
     margin: auto;
     
     padding-top: 50px;
-    font-size: 42px;
+    font-size: 300%;
     font-family: 'Catamaran', sans-serif;
     font-style: italic;
     text-align: center;
@@ -219,7 +272,7 @@ body {
     margin: auto;
     
     padding-top: 25px;
-    font-size: 24px;
+    font-size: 150%;
     font-family: 'Catamaran', sans-serif;
     text-align: center;
 }
@@ -228,7 +281,7 @@ body {
     display: block;
     margin: auto;
     
-    font-size: 20px;
+    font-size: 125%;
     font-family: 'Catamaran', sans-serif;
     text-align: center;
 }
@@ -237,7 +290,7 @@ body {
     display: block;
     margin: auto;
     
-    font-size: 20px;
+    font-size: 100%;
     font-family: 'Raleway', sans-serif;
     text-align: center;
     
