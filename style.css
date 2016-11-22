@@ -1,0 +1,475 @@
+body {
+    background-color: #fff; /* For browsers that do not support gradients */
+    /*background: -webkit-linear-gradient(-45deg, red, white); /* For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(-45deg, red, white); /* For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(-45deg, red, white); /* For Firefox 3.6 to 15 */
+    /*background: linear-gradient(-45deg, white, #ffe7df); /* Standard syntax */
+}
+
+@media screen and (max-width: 920px) {
+    #sectionsLarge {
+        display: none;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    #sectionsSmall {
+        display: none;
+    }
+}
+
+.menu {
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    
+    position: fixed;
+    width: 100%;
+    height: 46px;
+    top: 0px;
+    z-index: 1;
+    background-color: #222;
+  
+}
+
+.menu li {
+    display: inline-block;
+    
+    margin-left: 15px;
+    margin-right: 15px;
+    
+    padding-top: 5px;
+    font-size: 28px;
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    
+    color: white;
+}
+
+.menu li a:link {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: white;
+}
+
+.menu li a:visited {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: white;
+}
+
+.menu li a:hover {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: #e4af24;
+    
+    transition: all ease 0.3s;
+}
+
+.menu li a:active {
+    color: #e4af24;
+}
+
+#social {
+    display: inline-block;
+    position: fixed;
+    right: 2%;
+    top: 0.2%;
+}
+
+.social#emailLink {
+    background-image: url(In.png);
+    height: 28px;
+    width: 28px;
+    
+    position: fixed;
+    right: 4%;
+    
+    transition: all ease 0.3s;
+    transition: ease-out 0.3s;
+}
+
+.social#instagramLink {
+    background-image: url(GitHub.png);
+    height: 32px;
+    width: 32px;
+    
+    position: fixed;
+    right: 8%;
+    
+    transition: all ease 0.3s;
+    transition: ease-out 0.3s;
+}
+
+.social#facebookLink {
+    background-image: url(GitHub.png);
+    height: 32px;
+    width: 32px;
+    
+    position: fixed;
+    right: 12%;
+    
+    transition: all ease 0.3s;
+    transition: ease-out 0.3s;
+}
+
+.social#youtubeLink {
+    background-image: url(GitHub.png);
+    height: 32px;
+    width: 32px;
+    
+    position: fixed;
+    right: 16%;
+    
+    transition: all ease 0.3s;
+    transition: ease-out 0.3s;
+}
+
+.social#emailLink:hover {
+    background-image: url('GithubColored.png');
+}
+
+.social#emailLink:active {
+    background-image: url('GithubColored.png');
+}
+
+.social#instagramLink:hover {
+    background-image: url(InColored.png);
+}
+
+.social#instagramLink:active {
+    background-image: url(InColored.png);
+}
+
+.social#facebookLink:hover {
+    background-image: url(InColored.png);
+}
+
+.social#facebookLink:active {
+    background-image: url(InColored.png);
+}
+
+.social#youtubeLink:hover {
+    background-image: url(InColored.png);
+}
+
+.social#youtubeLink:active {
+    background-image: url(InColored.png);
+}
+
+#header {
+    height:  62px;
+}
+
+
+.page {
+    width: inherit;
+}
+
+#innerWrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.sectionHeader {
+    display: block;
+    margin: auto;
+    
+    padding-top: 50px;
+    
+    font-size: 92px;
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+    
+    text-transform: uppercase;
+}
+
+#home {
+    background-image: url(profile.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.indentedText {
+    text-indent: 40px;
+}
+
+#performances {
+    padding-bottom: 62px;
+}
+
+.youtubeYear {
+    display: block;
+    margin: auto;
+    
+    padding-top: 50px;
+    font-size: 42px;
+    font-family: 'Catamaran', sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.youtubeMusic {
+    display: block;
+    margin: auto;
+    
+    padding-top: 25px;
+    font-size: 24px;
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+}
+
+.youtubeEvent {
+    display: block;
+    margin: auto;
+    
+    font-size: 20px;
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+}
+
+.fancyButton {
+    display: block;
+    margin: auto;
+    
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    
+    color: white;
+}
+
+.youtubeVideo {
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.youtubeVideo iframe {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.buttonText {   
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 40px;
+    border-color: #990000;
+    background-color: transparent;
+    
+    padding: 20px 30px;
+    
+    text-decoration-color: #990000;
+    text-decoration: none;
+    text-decoration-line: none;
+    color: #990000;
+}
+
+.buttonText:link {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 40px;
+    border-color: #990000;
+    background-color: transparent;
+    
+    padding: 20px 30px;
+    
+    text-decoration: none;
+    text-decoration-line: none;
+    color: #990000;
+}
+
+.buttonText:visted {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 40px;
+    border-color: #990000;
+    background-color: transparent;
+    
+    padding: 20px 30px;
+    
+    text-decoration: none;
+    text-decoration-line: none;
+    color: #990000;
+}
+
+.buttonText:hover {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 40px;
+    border-color: #990000;
+    background-color: #990000;
+    
+    padding: 20px 30px;
+    
+    text-decoration: none;
+    text-decoration-line: none;
+    color: white;
+    
+    transition: all ease 0.3s;
+    transition: ease-out 0.3s;
+}
+
+.buttonText:active {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 40px;
+    border-color: #990000;
+    background-color: #990000;
+    
+    padding: 20px 30px;
+    
+    text-decoration: none;
+    text-decoration-line: none;
+    color: white;
+    
+    transition: all ease 0.3s;
+    transition: ease-out 0.3s;
+}
+
+#education {
+    background-color: #fff6d1;
+    min-height: 100vh;
+}
+
+#educationCode {
+    min-width: 400px;
+    width: 80%;
+    padding-top: 10%;
+    display: block;
+    margin: auto;
+}
+
+#educationText {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    right: 5%;
+    
+    font-family: 'Catamaran', sans-serif;
+    font-size: 18px;
+    font-size-adjust: auto;
+}
+
+#educationImage {
+    width: 100%;
+}
+
+#experience {
+    background-color: #ffe7df;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#experienceText {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    width: 60%;
+    right: 5%;
+    float:left;
+    
+    font-family: 'Catamaran', sans-serif;
+    font-size: 18px;
+    font-size-adjust: auto;
+}
+
+#quickenImage {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+    max-width: 40%;
+    max-height: 1250px;
+    
+    overflow: hidden;
+}
+
+#projects {
+    background-color: #eeffee;
+    min-height: 100vh;
+}
+
+#projectsPortfolioText {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    right: 5%;
+    text-align: center;
+    
+    font-family: 'Catamaran', sans-serif;
+    font-size: 18px;
+    font-size-adjust: auto;
+}
+
+#encryptrImage {
+    min-width: 400px;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#progressImage {
+    min-width: 400px;
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#projectsEncryptrText {
+    padding-top: 1%;
+    padding-bottom: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    right: 5%;
+    text-align: center;
+    
+    font-family: 'Catamaran', sans-serif;
+    font-size: 18px;
+    font-size-adjust: auto;
+}
+
+#projectsProgressText {
+    padding-top: 1%;
+    padding-bottom: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    right: 5%;
+    text-align: center;
+    
+    font-family: 'Catamaran', sans-serif;
+    font-size: 18px;
+    font-size-adjust: auto;
+}
+
+#resume {
+    background-color: #e0fbff;
+}
+
+#resumeImage {
+    padding: 5%;
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
