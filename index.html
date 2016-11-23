@@ -41,8 +41,8 @@
                         <li class="home">
                             <a href="#home" id="homeButton">HOME</a>
                         </li>
-                        <li class="performances">
-                            <a href="#performances" id="performancesButton">PERFORMANCES</a>
+                        <li class="music">
+                            <a href="#music" id="musicButton">MUSIC</a>
                         </li>
                         <li class="members">
                             <a href="#members" id="membersButton">MEMBERS</a>
@@ -53,6 +53,13 @@
                         <li class="album">
                             <a href="#album" id="albumButton">ALBUM</a>
                         </li>
+                    </div>
+                    
+<!--                    <div id="menuToggle" class="menuToggle" onclick="animateBars(this)">-->
+                    <div id="menuToggle" class="menuToggle" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
                     </div>
                     
                     <div id="social">
@@ -76,23 +83,24 @@
             </nav>
         </div>
         
+        
         <div id="mobileOverlay">
             <div id="mobileWrapper">
                 <div id="mobileNav">
                     <div class="mobileButton">
-                        <a href="#home">HOME</a>
+                        <a href="#home" onclick="showContent()">HOME</a>
                     </div>
                     <div class="mobileButton">
-                        <a href="#performances">PERFORMANCES</a>
+                        <a href="#music" onclick="showContent()">MUSIC</a>
                     </div>
                     <div class="mobileButton">
-                        <a href="#members">MEMBERS</a>
+                        <a href="#members" onclick="showContent()">MEMBERS</a>
                     </div>
                     <div class="mobileButton">
-                        <a href="#gallery">GALLERY</a>
+                        <a href="#gallery" onclick="showContent()">GALLERY</a>
                     </div>
                     <div class="mobileButton">
-                        <a href="#album">ALBUM</a>
+                        <a href="#album" onclick="showContent()">ALBUM</a>
                     </div>
                 </div>
             </div>
@@ -104,8 +112,8 @@
                 <div class="sectionHeader">Purdue Taal</div>
             </div>
 
-            <div id="performances" class="page">
-                <div class="sectionHeader">Performances</div>
+            <div id="music" class="page">
+                <div class="sectionHeader">MUSIC</div>
                 <div>
                     <span class="youtubeYear">2016</span>
                     <span class="youtubeMusic">Kal Ho Naa Ho / See You Again</span>
