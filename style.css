@@ -269,13 +269,26 @@ body {
     line-height: 1.2;
 }
 
-.sectionHeader {
+.header500 {
     display: block;
     margin: auto;
     
     padding-top: 75px;
     
     font-size: 500%;
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+    
+    text-transform: uppercase;
+}
+
+.header300 {
+    display: block;
+    margin: auto;
+    
+    padding-top: 25px;
+    
+    font-size: 300%;
     font-family: 'Catamaran', sans-serif;
     text-align: center;
     
@@ -297,17 +310,6 @@ body {
 
 #music {
     padding-bottom: 62px;
-}
-
-.youtubeYear {
-    display: block;
-    margin: auto;
-    
-    padding-top: 50px;
-    font-size: 300%;
-    font-family: 'Catamaran', sans-serif;
-    font-style: italic;
-    text-align: center;
 }
 
 .youtubeMusic {
@@ -431,6 +433,18 @@ body {
     transition: all ease 0.3s;
     transition: ease-out 0.3s;
 }
+
+
+#alumni {
+    font-size: 100%;
+    font-family: 'Catamaran', sans-serif;
+    text-align: center;
+}
+
+#alumniList {
+    column-count: 2;
+}
+
 
 #education {
     background-color: #fff6d1;
